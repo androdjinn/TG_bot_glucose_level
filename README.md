@@ -32,56 +32,64 @@
 ```bash
 git clone https://github.com/androdjinn/TG_bot_glucose_level
 cd TG_bot_glucose_level
+```
 
-##2. Установка зависимостей
+###2. Установка зависимостей
 Желательно использовать виртуальное окружение:
 
-bash
+```bash
 python -m venv venv
 source venv/bin/activate  # для Linux/Mac
 venv\Scripts\activate     # для Windows
+```
+
 Установите необходимые пакеты:
 
-bash
+```bash
 pip install -r requirements.txt
+```
 Если файла requirements.txt нет, создайте его со следующим содержимым:
 
-text
+```text
 pyTelegramBotAPI
 mysql-connector-python
 pandas
 matplotlib
 openpyxl
 python-dotenv
-3. Настройка базы данных MySQL
+```
+###3. Настройка базы данных MySQL
 Создайте базу данных (например, diabetes_bot) и пользователя с правами на неё. Запомните имя базы, пользователя и пароль.
 
-4. Создание файла .env
+###4. Создание файла .env
 В корне проекта создайте файл .env и укажите в нём следующие переменные:
 
-text
+```text
 BOT_TOKEN=ваш_токен_бота_от_BotFather
 DB_USER=пользователь_mysql
 DB_PASSWORD=пароль_mysql
 DB_HOST=хост (по умолчанию localhost)
 DB_NAME=имя_базы_данных
+```
 Пример:
 
-text
+```text
 BOT_TOKEN=1234567890:ABCdefGHIjklMNOpqrsTUVwxyz
 DB_USER=diabot
 DB_PASSWORD=securepass
 DB_HOST=localhost
 DB_NAME=diabetes_bot
-5. Запуск бота
-bash
+```
+###5. Запуск бота
+```bash
 python bot.py
+```
 Бот начнёт опрашивать серверы Telegram и будет готов принимать сообщения.
 
 Использование
 Отправьте боту команду /start. Появится меню с кнопками:
 
-Внести дневной – начало ввода дневной записи.
+-Внести дневной – начало ввода дневной записи.
 
 Внести ночной – начало ввода ночной записи.
 
