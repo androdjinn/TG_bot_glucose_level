@@ -39,7 +39,7 @@ python-dotenv – загрузка переменных окружения из 
 Установка и запуск
 1. Клонирование репозитория
 bash
-git clone https://github.com/yourusername/diabetes-bot.git
+git clone https://github.com/androdjinn/TG_bot_glucose_level
 cd diabetes-bot
 2. Установка зависимостей
 Желательно использовать виртуальное окружение:
